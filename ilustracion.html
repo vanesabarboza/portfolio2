@@ -1,105 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Ilustración Digital</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilustración Digital | Multimedia Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">MULTIMEDIA DESIGNER</div>
-  <nav class="nav">
-    <a href="portfolio.html">INICIO</a>
-    <a href="sobremi.html">SOBRE MI</a>
-    <a href="portfolio.html">PORTFOLIO</a>
-    <a href="contacto.html">CONTACTO</a>
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">MULTIMEDIA DESIGNER</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Abrir menú">☰</button>
   </nav>
-</header>
 
-<main class="container">
-
-  <h1 class="title">Ilustración</h1>
-  <h1 class="title second">Digital</h1>
-
-  <!-- HERO -->
-  <div class="illustration-hero">
-
-    <img src="img/ilustraciondigital/image.png" class="img-left">
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="ilus-hero">
+    <h1 class="ilus-title">Ilustración</h1>
+    <div class="title-divider">
+      <span class="line"></span>
+      <span class="diamond">◆</span>
+      <p class="subtitle" style="margin:0; letter-spacing: 0.3em;">D i g i t a l</p>
+      <span class="diamond">◆</span>
+      <span class="line"></span>
     </div>
+  </section>
 
-    <img src="img/ilustraciondigital/Ilustracion3.png" class="img-right">
+  <!-- ═══════════════════════════════════════
+       FEATURED BANNER – La Princesa y el Sapo
+  ═══════════════════════════════════════ -->
+  <div style="max-width:1100px; margin: 0 auto; padding: 0 3% 20px;">
+    <div class="ilus-featured">
 
-  </div>
-
-  <!-- GALERIA -->
- <section>
-    <h2>Galería de Diseño</h2>
-
-    <div class="projects">
-
-    <div class="card">
-      <img src="img/ilustraciondigital/Ilustracion5.png" alt="">
-      <div class="overlay">
+      <!-- Imagen izquierda: libro -->
+      <div class="featured-left">
+        <img
+          src="img/ilustracion/1illustracion.png"
+          alt="Libro ilustrado La Princesa y el Sapo"
+          class="featured-book"
+        />
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/ilustraciondigital/Ilustracion4.png" alt="">
-      <div class="overlay">
+      <!-- Texto central -->
+      <div class="featured-center">
+        <h2 class="featured-title">"La Princesa y el sapo".</h2>
+        <p class="featured-desc">
+          Versión ilustrada del clásico cuento infantil "La princesa y el sapo"
+          plantea un enfoque editorial donde funciona como eje narrativo
+        </p>
+        <a href="galeria-princesa.html" class="featured-btn">
+          VER GALERÍA DE DISEÑOS &nbsp;→
+        </a>
       </div>
-    </div>
 
-    <div class="card">
-      <img src="img/ilustraciondigital/Ilustracion6.png" alt="">
+      <!-- Imagen derecha: personaje -->
+      <div class="featured-right">
+        <img
+          src="assets/princesa-personaje.png"
+          alt="Ilustración de la princesa sentada con el sapo"
+          class="featured-char"
+        />
       </div>
+
     </div>
   </div>
+
+  <!-- ═══════════════════════════════════════
+       GALERÍA DE DISEÑO
+  ═══════════════════════════════════════ -->
+  <section class="ilus-gallery-section">
+
+    <!-- Perrito decorativo -->
+    <div class="ilus-dog">
+      <img src="img/ilustracion/2Ilustracion.png" alt="Perrito ilustrado decorativo" />
     </div>
 
-
-</main>
-
-</main>
-
-<section class="cta">
-  <h2>¿Te gustaría trabajar juntos?</h2>
-   <button onclick="window.location.href='contacto.html'" class="btn">CLICK AQUÍ</button>
-</section>
-
-<footer class="footer">
-  <div class="footer-left">
-    <img src="img/Footer.png">
-  </div>
-
-  <div class="footer-center">
-    <h3>SERVICIOS</h3>
-    <ul>
-   
-      <li>
-        <a href="#">Diseño 3D</a>
-      </li>
-
-      <a href="#">Fotografía</a>
-
-      <li></li>
-      <a href="#">Ilustración</a>
-
-      <li></li>
-      <a href="#">Diseño WEB</a>
-
-    </ul>
-  </div>
-
-  <div class="footer-right">
-    <h3>Sígueme en ...</h3>
-    <div class="socials">
-      <a href="#"><img src="img/icons/ig.png"></a>
-      <a href="#"><img src="img/icons/linkedin.png"></a>
+    <!-- Encabezado con líneas -->
+    <div class="title-divider" style="margin-bottom: 24px;">
+      <span class="line"></span>
+      <span class="gallery-section-title">Galería&nbsp;de&nbsp;Diseño</span>
+      <span class="line"></span>
     </div>
+
+    <!-- Grid de 3 tarjetas -->
+    <div class="ilus-gallery">
+
+      <div class="ilus-card">
+        <img src="img/ilustracion/3Ilustracion.png" alt="Ilustración Hola Amigo con personajes animales" />
+      </div>
+
+      <div class="ilus-card">
+        <img src="img/ilustracion/4Ilustracion.png" alt="Ilustración del perrito schnauzer con personajes" />
+      </div>
+
+      <div class="ilus-card">
+        <img src="img/ilustracion/5Ilustracion.png" alt="Ilustración nocturna con mensaje motivacional" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════ -->
+  <div class="cta-banner">
+    <div class="cta-icon">
+      🤝
+    </div>
+    <div class="cta-text">
+      <h3>¿Te gustaría trabajar juntos?</h3>
+      <p>Estoy abierta a nuevos proyectos y colaboraciones.</p>
+    </div>
+    <a href="contacto.html" class="cta-btn">HABLEMOS &nbsp;→</a>
   </div>
-</footer>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <!-- Logo / marca -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <!-- Reemplazá con tu img real si tenés: <img src="assets/logo-vm.png" alt="VM Logo" width="64" /> -->
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="31" stroke="#c88fa8" stroke-width="1.5"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+              font-family="Playfair Display, serif" font-size="20" fill="#c88fa8">VM</text>
+          </svg>
+        </div>
+        <p class="footer-role">MULTIMEDIA DESIGNER</p>
+        <p class="footer-tagline">
+          Creo experiencias visuales que<br />
+          comunican ideas, cuentan historias y<br />
+          conectan personas.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-services">
+        <h4>SERVICIOS</h4>
+        <ul>
+          <li>Diseño 3D</li>
+          <li>Fotografía</li>
+          <li>Diseño Web</li>
+          <li>Ilustración</li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="footer-social">
+        <h4>SÍGUEME</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
+          <span class="social-icon instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/>
+            </svg>
+          </span>
+          Instagram
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+          <span class="social-icon linkedin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </span>
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Vanesa Milagros Barboza Barthe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
