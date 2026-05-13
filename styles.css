@@ -222,8 +222,8 @@ body {
 
 .card img {
   width: 100%;
-  height: 220px;        
-  object-fit: cover;    
+  height: 220px;        /* ← mismo alto que la card */
+  object-fit: cover;    /* ← recorta sin deformar */
   display: block;
   transition: 0.3s;
 }
