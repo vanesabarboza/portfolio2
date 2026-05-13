@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diseño Web | Multimedia Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">MULTIMEDIA DESIGNER</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="sobre-mi.html">Sobre mí</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Abrir menú">☰</button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="subpage-hero">
+    <h1 class="subpage-title">Diseño Web</h1>
+    <div class="title-divider">
+      <span class="line"></span>
+      <span class="diamond">◆</span>
+      <p class="subtitle" style="margin:0; letter-spacing: 0.3em;">W e b s i t e s</p>
+      <span class="diamond">◆</span>
+      <span class="line"></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PROYECTOS – tarjetas apiladas
+  ═══════════════════════════════════════ -->
+  <section style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 0 auto; padding: 0 4% 48px;">
+
+    <!-- Proyecto 1: Candy Cake -->
+    <div class="subpage-card" style="aspect-ratio: 16 / 7; border-radius: 12px;">
+      <img
+        src="img/diseño-web/1Disweb.png"
+        alt="Proyecto web Candy Cake – identidad visual y e-commerce"
+        class="subpage-img"
+      />
+      <div class="subpage-overlay"></div>
+    </div>
+
+    <!-- Proyecto 2: Street / skate (oscuro) -->
+    <div class="subpage-card" style="aspect-ratio: 16 / 7; border-radius: 12px;">
+      <img
+        src="img/diseño-web/2Disweb.png"
+        alt="Proyecto web street skate – diseño oscuro con identidad urbana"
+        class="subpage-img"
+        /><div class="subpage-overlay"></div>
+      </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════ -->
+  <div class="cta-banner">
+    <div class="cta-icon">🤝</div>
+    <div class="cta-text">
+      <h3>¿Te gustaría trabajar juntos?</h3>
+      <p>Estoy abierta a nuevos proyectos y colaboraciones.</p>
+    </div>
+    <a href="contacto.html" class="cta-btn">HABLEMOS &nbsp;→</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="31" stroke="#c88fa8" stroke-width="1.5"/>
+            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+              font-family="Playfair Display, serif" font-size="20" fill="#c88fa8">VM</text>
+          </svg>
+        </div>
+        <p class="footer-role">MULTIMEDIA DESIGNER</p>
+        <p class="footer-tagline">
+          Creo experiencias visuales que<br />
+          comunican ideas, cuentan historias y<br />
+          conectan personas.
+        </p>
+      </div>
+
+      <div class="footer-services">
+        <h4>SERVICIOS</h4>
+        <ul>
+          <li>Diseño 3D</li>
+          <li>Fotografía</li>
+          <li>Ilustración</li>
+          <li>Diseño Web</li>
+          <li>Branding</li>
+          <li>Edición y Retoque</li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>SÍGUEME</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
+          <span class="social-icon instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/>
+            </svg>
+          </span>
+          Instagram
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+          <span class="social-icon linkedin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </span>
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Vanesa Milagros Barboza Barthe. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
