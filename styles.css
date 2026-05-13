@@ -228,6 +228,33 @@ body {
   transition: 0.3s;
 }
 
+/* Para diseño 3d */
+.card-lg {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 320px;
+  height: 280px;
+}
+
+.card-lg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.3s;
+}
+
+.card-lg:hover img {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+
+.card-lg:hover .overlay {
+  opacity: 1;
+}
+
+
 /* HOVER EFECTO */
 .overlay {
   position: absolute;
