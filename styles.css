@@ -1240,4 +1240,22 @@ a {
   .ilus-gallery {
     grid-template-columns: 1fr;
   }
+
+   .subpage-gallery.artistic {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  gap: 12px !important;
+}
+
+.subpage-gallery.artistic .subpage-card {
+  height: 320px !important; /* mismo alto que arriba */
+}
+
+.subpage-gallery.artistic .subpage-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
 }
