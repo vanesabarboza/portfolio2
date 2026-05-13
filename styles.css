@@ -1241,13 +1241,11 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .subpage-gallery.artistic {
+ .subpage-gallery.artistic {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  max-width: 900px !important; /* 👈 ajusta esto */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  justify-content: center !important;
+  width: fit-content !important;
+  margin: 0 auto !important;       
   gap: 12px !important;
 }
 
